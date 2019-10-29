@@ -1,22 +1,17 @@
 <template>
-  <div id="app">
-    <header-2 />
-    <router-view />
+  <div id="head">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import header2 from '@/components/header.vue'
-
 export default {
-  name: 'app',
-  components: {
-    header2
-  }
+  name: 'head'
 }
 </script>
-
 
 <style>
 #app {
@@ -32,11 +27,10 @@ export default {
 }
 
 #nav a {
-  font-weight: bold;
   color: #2c3e50;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: red;
 }
 </style>
