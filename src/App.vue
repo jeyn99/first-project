@@ -29,7 +29,7 @@ export default {
 }
 
 #nav {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #nav a {
